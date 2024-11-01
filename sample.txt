@@ -1,0 +1,255 @@
+__WIKI__
+== include page id (1) ==
+{{1}}
+
+== Text formatting markup ==
+
+{| class="wikitable"
+! Description
+! width=40% | You type
+! width=40% | You get
+|-
+! colspan="3" style="background: #ABE" | Character (inline) formatting – ''applies anywhere''
+|-
+| Italic text
+| <pre>
+''italic''
+</pre>
+|
+''italic''
+|-
+| Bold text
+| <pre>
+'''bold'''
+</pre>
+|
+'''bold'''
+|-
+| Bold and italic
+| <pre>
+'''''bold & italic'''''
+</pre>
+|
+'''''bold & italic'''''
+|-
+| Strike text
+| <pre>
+<strike> strike text </strike>
+</pre>
+|<strike> strike text </strike>
+|-
+| Escape wiki markup
+| <pre>
+&lt;nowiki&gt;no ''markup''&lt;/nowiki&gt;
+</pre>
+|
+<nowiki>no ''markup''</nowiki>
+|-
+| Escape wiki markup once
+| <pre>
+[[API]]&lt;nowiki/>extension
+</pre>
+|
+[[API]]<nowiki/>extension
+|-
+! colspan="3" style="background: #ABE" | Section formatting – ''only at the beginning of the line''
+|-
+| Headings of different levels 
+| <pre>
+
+== Level 2 ==
+
+=== Level 3 ===
+
+==== Level 4 ====
+
+===== Level 5 =====
+
+====== Level 6 ======
+
+</pre>
+
+|
+
+<!-- using HTML markup to avoid creating new sections -->
+<h2>Level 2</h2>
+
+<h3>Level 3</h3>
+
+<h4>Level 4</h4>
+
+<h5>Level 5</h5>
+
+<h6>Level 6</h6>
+
+|-
+| Horizontal rule
+| <pre>
+Text before
+----
+Text after
+</pre>
+|
+Text before
+----
+Text after
+|-
+| Bullet list
+|
+<pre>
+* Start each line
+* with an [[Wikipedia:asterisk|asterisk]] (*).
+** More asterisks give deeper
+*** and deeper levels.
+* Line breaks <br />don't break levels.
+*** But jumping levels creates empty space.
+Any other start ends the list.
+</pre>
+|
+* Start each line
+* with an [[Wikipedia:asterisk|asterisk]] (*).
+** More asterisks give deeper
+*** and deeper levels.
+* Line breaks <br />don't break levels.
+*** But jumping levels creates empty space.
+Any other start ends the list.
+|-
+| Numbered list
+|
+<pre>
+# Start each line
+# with a [[Wikipedia:Number_sign|number sign]] (#).
+## More number signs give deeper
+### and deeper
+### levels.
+# Line breaks <br />don't break levels.
+### But jumping levels creates empty space.
+# Blank lines
+
+# end the list and start another.
+Any other start also
+ends the list.
+</pre>
+|
+# Start each line
+# with a [[Wikipedia:Number_sign|number sign]] (#).
+## More number signs give deeper
+### and deeper
+### levels.
+# Line breaks <br />don't break levels.
+### But jumping levels creates empty space.
+# Blank lines
+
+# end the list and start another.
+Any other start also
+ends the list.
+|-
+| Definition list
+| <pre>
+;item 1
+: definition 1
+;item 2
+: definition 2-1
+: definition 2-2
+</pre>
+|
+;item 1
+: definition 1
+;item 2
+: definition 2-1
+: definition 2-2
+|-
+| Indent text
+| <pre>
+: Single indent
+:: Double indent
+::::: Multiple indent
+</pre>
+|
+: Single indent
+:: Double indent
+::::: Multiple indent
+|-
+| Mixture of different types of list
+|
+<pre>
+# one
+# two
+#* two point one
+#* two point two
+# three
+#; three item one
+#: three def one
+# four
+#: four def one
+#: this looks like a continuation
+#: and is often used
+#: instead <br />of &lt;nowiki><br />&lt;/nowiki>
+# five
+## five sub 1
+### five sub 1 sub 1
+## five sub 2
+</pre>
+|
+# one
+# two
+#* two point one
+#* two point two
+# three
+#; three item one
+#: three def one
+# four
+#: four def one
+#: this looks like a continuation
+#: and is often used
+#: instead <br />of <nowiki><br /></nowiki>
+# five
+## five sub 1
+### five sub 1 sub 1
+## five sub 2{{anchor|pre}}
+|-
+| Preformatted text
+| <pre>
+ Start each line with a space.
+ Text is '''preformatted''' and
+ ''markups'' '''''can''''' be done.
+</pre>
+|
+ Start each line with a space.
+ Text is '''preformatted''' and
+ ''markups'' '''''can''''' be done.
+|-
+| Preformatted text blocks
+| <pre> <nowiki><nowiki>Start with a space in the first column,
+(before the <nowiki>).
+
+Then your block format will be
+    maintained.
+ 
+This is good for copying in code blocks:
+
+def function():
+    """documentation string"""
+
+    if True:
+        print True
+    else:
+        print False</nowiki></nowiki>
+</pre>
+|
+ <nowiki>Start with a space in the first column,
+(before the <nowiki>).
+
+Then your block format will be
+    maintained.
+
+This is good for copying in code blocks:
+
+def function():
+    """documentation string"""
+
+    if True:
+        print True
+    else:
+        print False</nowiki>
+|}
